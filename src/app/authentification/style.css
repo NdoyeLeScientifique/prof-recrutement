@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #ececec; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------ Login container ------------*/
+
+.box-area{
+    
+    width: 930px;
+}
+
+/*------------ Right box ------------*/
+
+.right-box{
+    padding: 40px 30px 40px 40px;
+   
+
+}
+
+/*------------ Custom Placeholder ------------*/
+.form-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+::placeholder{
+    font-size: 16px;
+}
+#labc{
+    margin-left: 10px;
+}
+
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+
+option{
+    padding-left: 30px;
+}
+
+/*------------ For small screens------------*/
+
+@media only screen and (max-width: 768px){
+
+     .box-area{
+        margin: 0 10px;
+
+     }
+     .left-box{
+        height: 100px;
+        overflow: hidden;
+     }
+     .right-box{
+        padding: 20px;
+     }
+
+}
+#connexion{
+    display: block;
+    transition: ease-in;
+    opacity: 1;
+    animation-name: 'in';
+    animation-duration: 1s;
+}
+@keyframes in {
+    from{opacity: 0.3;}
+    to{opacity: 1;}
+}
+#inscription{
+    animation-name: 'in';
+    animation-duration: 1s;
+    opacity: 1;
+    display: none;
+}
+
+#home{
+    display: none;
+}
+#auth{
+    display: block;
+}
