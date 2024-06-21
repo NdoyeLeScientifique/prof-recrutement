@@ -1,7 +1,13 @@
-<div class="flex flex-col min-h-screen bg-gris">
-     <app-header class="justify-between"></app-header>
-     <app-vitrine class="flex-grow min-h-screen"></app-vitrine>
-    <app-home id="home" style="display: none;"></app-home>
+<!-- app.component.html -->
+<div class="flex flex-col  min-h-screen w-full">
+   <app-header class="justify-between text-white p-2"></app-header>
+   <router-outlet class=" h-1/2 bg-blue-500"   ></router-outlet> 
+</div>
+
+
+<div style="display: none;" class="min-h-screen h-full bg-green">
+    <app-header class="justify-between"></app-header>
+    <app-vitrine ></app-vitrine>
+    <app-home id="home" class="min-h-screen" style="display: none;"></app-home>
     <app-authentification id="auth"  style="display: none;" ></app-authentification>
-  
 </div>
