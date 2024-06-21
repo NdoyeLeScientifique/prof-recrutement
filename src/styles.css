@@ -2,3 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body html{
+    height: 100vh;
+    background-color:red;
+}
+.text-blue-500:hover{
+    color: rgb(16, 9, 154);
+}
