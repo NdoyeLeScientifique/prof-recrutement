@@ -1,0 +1,41 @@
+<!-- src/app/about-modal/about-modal.component.html -->
+<div *ngIf="isVisible" class="fixed inset-0 flex items-center justify-center z-10">
+    <div  style="background-color: #0a0424;color:#0000ff;" class=" w-full h-full p-6  shadow-lg  relative">
+      <a href="_" class="absolute top-4 right-4  text-gray-500 hover:text-gray-300" (click)="closeModal()">✖</a>
+      <div class="flex text-white text-2xl flex-col items-center">
+        <h2 style="color:#fdfdff;"  class="text-2xl font-bold mb-4  drop-shadow-lg">À propos de nous</h2>
+        <p style="color:#0000ff;" class="mb-4 mt-10 text-center drop-shadow-lg">
+          Bienvenue sur Diang ak Diangalé, votre plateforme de référence dédiée au recrutement des enseignants. Que vous soyez un établissement scolaire à la recherche de talents pédagogiques ou un enseignant en quête de nouvelles opportunités, nous sommes là pour vous accompagner.
+        </p>
+        <div  class="flex space-x-6 mt-10 mb-4">
+          <div class="text-center">
+            <h3 style="color:#fdfdff;"  class="text-lg  drop-shadow-lg">Notre Mission</h3>
+            <p style="color:#0000ff;" class="">
+              Notre mission est simple : mettre en relation les meilleurs enseignants avec les établissements scolaires qui ont besoin de leurs compétences et de leur passion.
+            </p>
+          </div>
+          <div class="text-center">
+            <h3 style="color:#fdfdff;" class="font-bold text-lg drop-shadow-lg">Qui Sommes-Nous ?</h3>
+            <p style="color:#0000ff;" class="text-blue-200">
+              Diang ak Diangalé a été fondé en 2024 par une équipe de professionnels de l'éducation et de la technologie.
+            </p>
+          </div>
+          <div class="text-center">
+            <h3 style="color:#fdfdff;"  class="font-bold text-lg drop-shadow-lg">Contacts</h3>
+            <p style="color:#0000ff;" class="text-blue-200">
+              +221765596707<br>
+              diangakdiangale&#64;gmail.com<br>
+              Fann
+            </p>
+          </div>
+        </div>
+        <footer style="background-color:#0000ff;" class="fixed w-full flex items-center justify-center bottom-0 p-2 ">
+            <div class="flex items-center">
+                <img src="/assets/images/logo.png" alt="Logo"  class="h-16 ml-0 w-auto"> 
+                <span class="text-lg ml-4 italic drop-shadow-lg">"L'éducation est l'arme la plus puissante<br> pour changer le monde."   - Nelson Mandela</span>
+            </div>
+    </footer>
+      </div>
+    </div>
+  </div>
+  

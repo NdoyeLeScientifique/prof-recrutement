@@ -1,18 +1,24 @@
-<header class="text-blackp-4 ">
-    <div class="container  flex justify-between items-center p-1 ">
-      <div class="absolute left-10 h-20 aspect-square  "><img src="\assets\images\logo.png"></div>
-      <div class="text-lg font-bold">Prof Recrutement</div>
-        <div class="flex h-20 space-x-8">         
-          <div><a href="" class="no-underline text-black text-base-bold" >Trouver des talents</a></div>
-          <div><a href="#" class="no-underline text-black hover:text-blue  text-base-bold" >Trouver un emploi</a></div>
-          <div><a href="#" class="no-underline text-black hover:text-blue  text-base-bold" >A propos de nous</a></div>
-          <a href="inscript" class="no-underline"><div class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-600" routerLink="/auth" >
-            Créer un compte
-          </div></a>
-          <a href="connect" class="no-underline"><div class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-600" routerLink="/auth" >
-            Se connecter
-          </div></a>
-        </div>
+<div class="fixed top-0 left-0 right-0 bg-white z-50">
+  <div class="container mx-auto flex justify-between items-center px-0 py-2">
+    
+    <div class="flex items-center">
+      <img src="/assets/images/logo.png" alt="Logo"  class="h-16 ml-0 w-auto"> 
+      <span class="text-lg font-bold items-center h-full ml-4 text-black">Prof Recrutement</span>
     </div>
-  </header>
-  
+ 
+    <nav class="flex space-x-4">
+      <a href="/mesoffres" style="display: block;" class="text-gray-700 hover:text-blue-500 font-medium">Mes offres</a>
+      <a href="trouver-talents" style="display: block;" class="text-gray-700 hover:text-blue-500 font-medium">Trouver des talents</a>
+      <a href="/mes-candidatures" class="text-gray-700 hover:text-blue-500 font-medium">Mes candidatures</a>
+      <a href="/trouver-offre" class="text-gray-700 hover:text-blue-500 font-medium">Trouver un emploi</a>
+      <a href="#" (click)="openAboutModal();$event.preventDefault()" class="text-gray-700 hover:text-blue-500 font-medium">À propos de nous</a>
+    </nav>
+    
+    <div class="flex space-x-2">
+      <a href="/mon-prodile" class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-200">Mon profiles</a>
+      <a href="inscript" style="display: none;" class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-200">Créer un compte</a>
+      <a href="connect" style="display: none;" class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-200">Se connecter</a>
+      <a href="connect" class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-200">Se déconnecter </a>
+    </div>
+  </div>
+</div>

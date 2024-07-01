@@ -1,0 +1,15 @@
+<div *ngIf="enseignant" class="bg-white p-6 rounded-lg shadow-md w-full max-w-4xl mx-auto mt-2 mb-10">
+  <h2 class="text-2xl font-bold mb-4">{{ enseignant.prenom }} {{ enseignant.prenom }}</h2>
+  <p class="text-lg"><strong>Position:</strong> {{ enseignant.universite }}</p>
+  <p class="text-lg"><strong>Experience:</strong> {{ enseignant.experience }} ans</p>
+  <p class="text-lg"><strong>Age:</strong> {{ enseignant.age }} ans</p>
+  <p class="text-lg"><strong>Email:</strong> {{ enseignant.email }}</p>
+  <p class="text-lg"><strong>Education:</strong> {{ enseignant.competence }}</p>
+  <p class="text-lg"><strong>Degree:</strong> {{ enseignant.degree }}</p>
+  <p class="text-lg"><strong>Experience Years:</strong> {{ enseignant.experienceYears }} ans</p>
+  <p class="text-lg"><strong>University:</strong> {{ enseignant.universite }}</p>
+  <div class="flex space-x-4">
+    <button class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-700">Recruter</button>
+    <button class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-700">Ne pas recruter</button>
+  </div>
+</div>

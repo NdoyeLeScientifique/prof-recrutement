@@ -1,0 +1,12 @@
+<div class="bg-green p-6  rounded-lg shadow-md w-full max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold mb-4">Mes candidatures</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div *ngFor="let candidature of candidatures"  class="p-4 border rounded shadow hover:bg-gray-50">
+        <h3 class="text-lg font-semibold">Candidature {{ candidature.candidature_nom }}</h3>
+        <p>Candidature : {{candidature.candidature_nom}}</p>
+        <p>Etablissement : {{candidature.candidature_etablissement}}</p>
+        <p>Statut : {{candidature.candidature_statut}}</p>
+        <a href="#"  (click)="onSelect(candidature);$event.preventDefault()" class="text-blue-500 hover:underline">Voir profil...</a>
+    </div>
+    </div>
+</div>
