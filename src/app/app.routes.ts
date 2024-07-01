@@ -15,6 +15,9 @@ import { AproposComponent } from './apropos/apropos.component';
 import { MesCandidaturesComponent } from './layouts/mes-candidatures/mes-candidatures.component';
 import { MaCandidatureComponent } from './layouts/mes-candidatures/ma-candidature/ma-candidature.component';
 import { MonProfileComponent } from './layouts/mon-profile/mon-profile.component';
+import { PublierOffreComponent } from './layouts/mesoffres/publier-offre/publier-offre.component';
+import { ProfileComplementaireComponent } from './authentification/profile-complementaire/profile-complementaire.component';
+import { MonProfileRecruteurComponent } from './layouts/mon-profile-recruteur/mon-profile-recruteur.component';
 
 export const routes: Routes = [
     {
@@ -28,6 +31,10 @@ export const routes: Routes = [
       {
         path: "connect",
         component: ConnexionComponent
+      },
+      {
+        path:"profile-complementaire",
+        component:ProfileComplementaireComponent
       },
       {
         path: "trouver-talents",
@@ -44,6 +51,10 @@ export const routes: Routes = [
       {
         path: "r-profile",
         component: RProfilesComponent
+      },
+      {
+        path:'mon-profile-recruteur',
+        component:MonProfileRecruteurComponent
       },
       {
         path:"mesoffreapp-mesoffres",
@@ -80,6 +91,10 @@ export const routes: Routes = [
       {
         path:'mon-prodile',
         component:MonProfileComponent
+      },
+      {
+        path:"publier-offre",
+        component:PublierOffreComponent
       },
       {
         path:"apropos",

@@ -24,10 +24,5 @@
   .button:hover {
     background-color: #0056b3;
   }
-  #inscription{
-    display: block;
-  }
-  #connexion{
-    display: none;
-  }
+
   

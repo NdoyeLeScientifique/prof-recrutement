@@ -1,11 +1,17 @@
 <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-4xl mx-auto">
-    <h2 class="text-2xl font-bold mb-4">Mes offres publiées</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-      <div *ngFor="let offre of offres"  class="p-4 border rounded shadow hover:bg-gray-50">
-        <h3 class="text-lg font-semibold"> {{ offre.offre }}</h3>
-        <p>Candidatures reçues : {{offre.id_offre}}</p>
-        <a href="#" (click)="onSelect(offre);$event.preventDefault()" class="text-blue-500 hover:underline">Voir profil...</a>
+  <h2 class="text-2xl font-bold mb-4">Mes offres publiées</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div *ngFor="let offre of offres" class="p-4 border rounded shadow hover:bg-gray-50">
+          <h3 class="text-lg font-semibold">{{ offre.offre }}</h3>
+          <p>Candidatures reçues : {{ offre.id_offre }}</p>
+          <a href="#" (click)="onSelect(offre);$event.preventDefault()" class="text-blue-500 hover:underline">Voir profil...</a>
+      </div>
+  </div>
+</div>
 
-    </div>
-    </div>
+<div class="fixed bottom-28 right-4">
+  <a href="/publier-offre"><button class="bg-green-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+      Publier une offre
+  </button>
+</a>
 </div>

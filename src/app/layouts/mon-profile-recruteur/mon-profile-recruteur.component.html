@@ -1,0 +1,20 @@
+<main class="flex flex-col items-center justify-center w-full p-6">
+    <h1 class="text-3xl font-bold text-blue-800 mb-4">Mon profil</h1>
+    <ul class="list-disc text-lg text-black text-left space-y-2 mb-6">
+      <li><strong>Prénom: </strong>{{profile.prenom}}</li>
+      <li><strong>Nom: </strong>{{profile.nom}}</li>
+      <li><strong>Email: </strong>{{profile.email}}</li>
+      <li><strong>Nom de l’établissement: </strong>{{profile.etablissement}}</li>
+      <li><strong>Adresse de l’établissement: </strong>{{profile.adresse}}</li>
+      <li><strong>Poste du recruteur: </strong>{{profile.poste}}</li>
+      <li><strong>Description courte de l’établissement:</strong></li>
+    </ul>
+    <p class="mt-4">
+      {{profile.description}}
+    </p>
+    <div class="flex space-x-4 mt-6">
+      <button class="bg-indigo-900 text-white px-6 py-2 rounded-full shadow">Modifier le profil</button>
+      <button (click)="goBack()" class="bg-indigo-900 text-white px-6 py-2 rounded-full shadow">Retourner</button>
+    </div>
+  </main>
+  
