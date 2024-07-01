@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ModalService } from '../modal.service';
 
 @Component({
   selector: 'app-vitrine',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './vitrine.component.css'
 })
 export class VitrineComponent {
+  constructor(private modalService: ModalService) {}
 
+  openAboutModal() {
+    this.modalService.openAboutModal();
+  }
 }
