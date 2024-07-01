@@ -1,0 +1,22 @@
+<div class=" min-h-screen bg-white font-bold p-2 pl-5">
+  <h2 class="text-xl flex justify-center items-center text-blue-800  mt-2 ml-5  mb-5">Détails de l'offre publiée</h2>
+  <h2 class="text-xl pl-5 mb-2">•  Offre : {{offre}}</h2>
+  <h2 class="text-xl pl-5 mb-2">•  Candidatures reçues : {{candidat_recu}}</h2>
+  <h2 class="text-xl pl-5 mb-2">•  Liste des candidats :</h2>
+  <ul>
+    <li *ngFor="let candidate of candidates" class="mb-4 ">
+      <div class="flex text-xl justify-between  ml-5 pr-20 items-center">
+        <div class="w-1/3 justify-between">• {{ candidate.prenom }} {{ candidate.nom }}</div>
+        <div class="w-1/3  flex justify-between " >
+          <button class=" text-blue-500 mr-4" >•  Voir profil</button>
+          <button class=" text-green-500 mr-4"(click)="acceptCandidate(candidate)" >•  Accepter</button>
+          <button class="text-red-500" (click)="rejectCandidate(candidate)" >•  Rejeter</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div class="flex justify-center items-center mt-5 space-x-10">
+    <a href="/mesoffres"><button class="px-10 py-2 bg-green-500 text-white rounded hover:bg-green-700">Retourner</button></a>
+    <button class="px-10 py-2 bg-red-500 text-white rounded hover:bg-red-700">Suprimer l'offre</button>
+  </div>
+</div>

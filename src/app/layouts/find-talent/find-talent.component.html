@@ -1,12 +1,11 @@
-<div class="bg-white p-6 rounded-lg shadow-md w-full max-w-4xl mx-auto">
+<div *ngIf="!selectTalent"  class="bg-white p-6 rounded-lg shadow-md w-full max-w-4xl mx-auto">
     <h2 class="text-2xl font-bold mb-4">Trouver des talents</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div *ngFor="let talent of talents" class="p-4 border rounded shadow hover:bg-gray-50">
-        <h3 class="text-lg font-semibold">{{ talent.name }}</h3>
-        <p>{{ talent.position }}</p>
+      <div *ngFor="let talent of talents"  class="p-4 border rounded shadow hover:bg-gray-50">
+        <h3 class="text-lg font-semibold">{{ talent.prenom }} {{ talent.nom }}</h3>
+        <p>{{ talent.universite }}</p>
         <p>Expérience {{ talent.experience }} ans</p>
-        <a href="#" class="text-blue-500 hover:underline">Voir profil...</a>
+        <a href="#" (click)="onSelect(talent);$event.preventDefault()" class="text-blue-500 hover:underline">Voir profil...</a>
       </div>
     </div>
 </div>
-  

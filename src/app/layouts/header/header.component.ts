@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ModalService } from '../../modal.service';
 
 @Component({
   selector: 'app-header',
@@ -9,4 +10,10 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  constructor(private modalService: ModalService) {}
+
+
+  openAboutModal() {
+    this.modalService.openAboutModal();
+  }
 }

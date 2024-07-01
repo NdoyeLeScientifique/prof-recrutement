@@ -1,0 +1,14 @@
+<main class="flex flex-col items-center justify-center w-full mt-20 p-6">
+    <h1 class="text-3xl font-bold text-blue-800 mb-4">Ma candidature</h1>
+    <ul class="list-disc text-lg text-black text-left space-y-2 mb-6">
+        <li><strong>Candidature :</strong> {{candidature.candidature_nom}}</li>
+        <li><strong>Etablissement:</strong> {{candidature.candidature_etablissement}}</li>
+        <li><strong>Date de candidature :</strong>{{candidature.candidature_date}} </li>
+        <li><strong>Statut :</strong> {{candidature.candidature_statut}}</li>
+        <li><strong>Voir détails:</strong> <a href="#" class="text-blue-600 hover:underline">{{candidature.candidature_detail}}</a></li>
+    </ul>
+    <div class="flex space-x-4">
+        <button class="bg-indigo-900 text-white px-6 py-2 rounded-full shadow">Retirer ma candidature</button>
+        <button class="bg-indigo-900 text-white px-6 py-2 rounded-full shadow">Retourner</button>
+    </div>
+</main>

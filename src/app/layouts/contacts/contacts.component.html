@@ -1,0 +1,15 @@
+<button mat-icon-button [matMenuTriggerFor]="contactMenu" aria-label="Afficher les informations de contact">
+    <div>contact_support</div>
+  </button>
+  <mat-menu #contactMenu="matMenu">
+    <button mat-menu-item>
+      <span>Email : contact-prof-recrutement.com</span>
+    </button>
+    <button mat-menu-item>
+      <span>Téléphone : +33 123 456 789</span>
+    </button>
+    <button mat-menu-item>
+      <span>Adresse : 123 Rue du Contact, Paris, France</span>
+    </button>
+  </mat-menu>
+  

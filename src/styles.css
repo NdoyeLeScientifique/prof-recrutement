@@ -3,10 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body html{
+/* body html{
     height: 100vh;
     background-color:red;
+}
+*{
+    margin: 0px;
+    padding: 0px;
 }
 .text-blue-500:hover{
     color: rgb(16, 9, 154);
 }
+html, body { }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
